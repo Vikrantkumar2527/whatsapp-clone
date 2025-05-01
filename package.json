@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "@prisma/client": "^6.5.0",
+    "zego-express-engine-webrtc": "^3.8.0"
+  },
+  "devDependencies": {
+    "prisma": "^6.5.0"
+  }
+}
