@@ -29,7 +29,7 @@ model Messages {
   receiver      User     @relation("ReceiverMessages", fields: [receiverId], references: [id])
 
   type          String   @default("text") // Message type: text, image, video, etc.
-  message       String   // Actual message content
+  message       String   
   messageStatus String   @default("sent") // sent, delivered, seen
   createdAt     DateTime @default(now()) // Timestamp of message
 }
