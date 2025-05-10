@@ -13,11 +13,11 @@ app.use("/api/auth", AuthRoutes)
 
 app.use("/uploads/recordings/",express.static("uploads/recordings"))
 app.use("/uploads/images/",express.static("uploads/images"))
-
+const port=process.env.PORT ||4000;
 
 app.use("/api/messages", MessageRoutes)
 const server = app.listen(process.env.PORT, () => {
-    console.log(`Server started on port ${process.env.PORT}`);
+    console.log(`Server started on port ${port}`);
 });
 const io = new Server(server, {
     cors: {
