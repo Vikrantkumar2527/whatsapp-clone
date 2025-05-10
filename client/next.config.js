@@ -6,7 +6,7 @@ const nextConfig = {
     NEXT_PUBLIC_ZEGO_SERVER_ID: "959c8fe0ab98ab69156555e7e52aa8bf",
   },
   images: {
-    domains: ["localhost"], // Fixed the typo here
+    domains: ["localhost"], 
   },
 };
 
